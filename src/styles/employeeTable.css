@@ -1,0 +1,29 @@
+/* Table */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.table__container {
+  width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.table__title {
+  font-size: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.btn__add {
+  width: 70px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.table__btn {
+  display: flex;
+  gap: 10px;
+}
