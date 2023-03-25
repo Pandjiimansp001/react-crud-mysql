@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "http://localhost/my-project/react-employee/",
+  baseURL: "http://react-crud.epizy.com/",
 });
