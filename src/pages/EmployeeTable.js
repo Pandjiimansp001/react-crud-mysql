@@ -14,13 +14,9 @@ const EmployeeTable = () => {
   });
 
   useEffect(() => {
-    // API.get("viewdata.php").then((response) => {
-    //   setEmployeeData(response.data);
-    // });
-    const response = API.get("viewdata.php");
-    const json = response.json();
-    const { results } = json;
-    setEmployeeData(results);
+    API.get("viewdata.php").then((response) => {
+      setEmployeeData(response.data);
+    });
   }, []);
 
   const addHandler = () => {
