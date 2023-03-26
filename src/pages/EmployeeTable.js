@@ -13,10 +13,13 @@ const EmployeeTable = () => {
     employee: [],
   });
 
-  const json = JSON.stringify(employeeData);
-
   useEffect(() => {
-    API.get("viewdata.php", json).then((response) => {
+    API.get("viewdata.php", {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    }).then((response) => {
       setEmployeeData(response.data);
     });
   }, []);
