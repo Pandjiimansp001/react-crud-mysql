@@ -14,12 +14,7 @@ const EmployeeTable = () => {
   });
 
   useEffect(() => {
-    API.get("viewdata.php", {
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    }).then((response) => {
+    API.get("viewdata.php").then((response) => {
       setEmployeeData(response.data);
     });
   }, []);
