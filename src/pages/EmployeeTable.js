@@ -13,11 +13,17 @@ const EmployeeTable = () => {
     employee: [],
   });
 
-  useEffect(() => {
+  const fetchGet = useEffect(() => {
     API.get("viewdata.php").then((response) => {
       setEmployeeData(response.data);
     });
   }, []);
+
+  try {
+    fetchGet();
+  } catch (error) {
+    console.log(error.message);
+  }
 
   const addHandler = () => {
     navigate("/addEmployee/add");
