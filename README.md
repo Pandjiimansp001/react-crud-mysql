@@ -9,5 +9,3 @@
 - Turn on Apache and MYSQL in xampp
 - Turn on CORS extention chrome
 - Run project with npm start
-
-Demo Video :  
